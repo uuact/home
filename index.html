@@ -1,6 +1,13 @@
-<head>
-<title>uuact</title>
-</head>
-<body>
-  <h1>Cide</h1>
-</body>
+<script>
+document.onkeydown=function(e){	//键盘监控
+var keyNum=window.event ? e.keyCode :e.which;
+if(keyNum==13){ //检测Enter
+    const a = Math.floor(Math.random() * (99999999- 10000000 + 1)) + 10000000;
+	console.log(a);
+	image_e = document.getElementById('image');
+    image_e.src = "https://pixiv.re/" + a + ".png";
+	}
+}
+</script>
+
+<img id="image" class="" src="" width="500" alt="无效"/>
